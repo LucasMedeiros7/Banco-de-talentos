@@ -1,27 +1,41 @@
-# Projeto Jedi - Plataforma Impact 
+# Jedi Project - Impact Platform
 
-### Projeto desenvolvido para o desafio da plataforma impact.
+### Overview:
+Jedi Project is a solution developed for the Impact Platform challenge, created to manage products. This project was built using Node.js and TypeScript, implementing a clean architecture and SOLID principles, unit and integration tests with Vitest, and documentation with Swagger. Additionally, it uses NodeCache for caching and Prisma as the ORM.
 
-### [Descrição do desafio](https://github.com/Impact-Plataform/Banco-de-talentos/blob/main/backend/readme.md)
+### [Description of challenge](https://github.com/Impact-Plataform/Banco-de-talentos/blob/main/backend/readme.md)
 
+## Technologies:
+Jedi Project is built using the following technologies:
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vitest](https://vitest.dev/)
+- [NodeCache](https://github.com/node-cache/node-cache)
+- [Swagger](https://swagger.io/)
+- [Prisma](https://www.prisma.io/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
 
-## ⚡ Requisitos para rodar aplicação localmente
+## Requirements:
+To run Jedi Project, you need to have the following requirements:
+- Git installed
+- Node.js v14 or later installed
+- npm v6 or later installed
+- A database system compatible with Prisma (SQLite)
 
-- [Git](https://git-scm.com/) instalado
-- [Node](https://node.js.org/) instalado
-- [Npm](https://www.npmjs.com/) instalado
-
-## 🎡 Como rodar o projeto
-
+## Running Locally
+To run Jedi Project locally, follow the steps below:
 ```bash
-# Instale as dependências
+# Install the dependencies:
 $ npm install
 
-# Rode as migrations para criar as tabelas no banco
+# Run the database migrations:
 $ npm run migrate
 
-# Inicie o servidor
+# Start the API server:
 $ npm run dev
-
-# Aplicação vai estar rodando em http://localhost:3333
 ```
+The API will be running on http://localhost:3333.
+
+## Usage:
+You can manage products through the API. For detailed documentation, check out the Swagger UI at http://localhost:3333/docs.
