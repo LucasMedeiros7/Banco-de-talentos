@@ -25,5 +25,3 @@ $ npm run dev
 
 # Aplicação vai estar rodando em http://localhost:3333
 ```
-
-## 📄 [Documentação.](https://jedi-project-backend-production.up.railway.app/docs)
