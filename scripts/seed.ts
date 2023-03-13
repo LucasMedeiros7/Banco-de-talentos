@@ -4,7 +4,11 @@ import { randomUUID } from 'node:crypto'
 const prisma = new PrismaClient()
 
 async function main (): Promise<void> {
-  await prisma.product.deleteMany()
+  const productsAlreadyExists = await prisma.product.findMany()
+  if (productsAlreadyExists.length) {
+    console.log('Products Already exists')
+    return
+  }
   const products = [
     { id: randomUUID(), name: 'Mouse - Logitech', price: 29.99, quantity: 10, createdAt: new Date() },
     { id: randomUUID(), name: 'Teclado - Keychron', price: 49.99, quantity: 5, createdAt: new Date() },

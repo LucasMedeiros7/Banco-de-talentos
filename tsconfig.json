@@ -7,6 +7,6 @@
     "sourceMap": true,
     "rootDir": ".",
   },
-  "include": ["tests/**/**.ts", "tests/**/**.spec", "src/**/*.ts"],
+  "include": ["tests/**/**.ts", "tests/**/**.spec", "src/**/*.ts", "scripts/**/*.ts"],
   "exclude": []
 }
