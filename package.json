@@ -4,7 +4,7 @@
   "description": "Este desafio tem como objetivo te avaliar como desenvolvedor Back-end;",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
     "dev": "tsx watch src/main/server.ts",
     "start": "node dist/src/main/server.js",
     "test": "vitest",
@@ -41,6 +41,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "node-cache": "^5.1.2",
+    "rimraf": "^4.4.0",
     "swagger-ui-express": "^4.6.0",
     "zod": "^3.20.2"
   }
